@@ -1,0 +1,28 @@
+********************
+01 N: user user1 category basic
+* New: user user1 category basic
+********************
+02 N: user user2 category pro
+* New: user user2 category pro
+********************
+03 N: user user3 category pro
+* New: user user3 category pro
+********************
+04 S:
+User user1 category basic numplays 0
+User user2 category pro numplays 0
+User user3 category pro numplays 0
+Category  Users  Plays  Average
+Basic         1      0     0.00
+Pro           2      0     0.00
+********************
+05 U: user user1
+* Upgrade: user user1 category pro
+********************
+06 S:
+User user1 category pro numplays 0
+User user2 category pro numplays 0
+User user3 category pro numplays 0
+Category  Users  Plays  Average
+Basic         0      0     0.00
+Pro           3      0     0.00

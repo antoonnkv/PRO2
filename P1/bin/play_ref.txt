@@ -1,0 +1,36 @@
+********************
+01 N: user user1 category basic
+* New: user user1 category basic
+********************
+02 S:
+User user1 category basic numplays 0
+Category  Users  Plays  Average
+Basic         1      0     0.00
+Pro           0      0     0.00
+********************
+03 P: user user1 song song1
+* Play: user user1 plays song song1 numplays 1
+********************
+04 S:
+User user1 category basic numplays 1
+Category  Users  Plays  Average
+Basic         1      1     1.00
+Pro           0      0     0.00
+********************
+05 P: user user1 song song2
+* Play: user user1 plays song song2 numplays 2
+********************
+06 S:
+User user1 category basic numplays 2
+Category  Users  Plays  Average
+Basic         1      2     2.00
+Pro           0      0     0.00
+********************
+07 P: user user2 song song2
++ Error: Play not possible
+********************
+08 S:
+User user1 category basic numplays 2
+Category  Users  Plays  Average
+Basic         1      2     2.00
+Pro           0      0     0.00

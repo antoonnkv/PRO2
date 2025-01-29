@@ -1,0 +1,8 @@
+01 N user1 basic                       #new user user1 category basic
+02 S
+03 P user1 song1                       #user user1 plays song1
+04 S
+05 P user1 song2                       #user user1 plays song2
+06 S
+07 P user2 song2                       #Error: Play not possible
+08 S
