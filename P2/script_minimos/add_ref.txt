@@ -1,0 +1,54 @@
+********************
+01 N: user user2 category basic
+* New: user user2 category basic
+********************
+02 S:
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+03 N: user user1 category pro
+* New: user user1 category pro
+********************
+04 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+05 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+06 S:
+User user1 category pro totalplaytime 0
+Song song1 playtime 0
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+07 A: user user1 song song2
+* Add: user user1 adds song song2
+********************
+08 S:
+User user1 category pro totalplaytime 0
+Song song1 playtime 0
+Song song2 playtime 0
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00

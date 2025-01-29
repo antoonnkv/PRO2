@@ -1,0 +1,99 @@
+********************
+01 N: user user2 category basic
+* New: user user2 category basic
+********************
+02 S:
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+03 N: user user1 category pro
+* New: user user1 category pro
+********************
+04 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+05 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+06 S:
+User user1 category pro totalplaytime 0
+Song song1 playtime 0
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+07 A: user user1 song song3
+* Add: user user1 adds song song3
+********************
+08 S:
+User user1 category pro totalplaytime 0
+Song song1 playtime 0
+Song song3 playtime 0
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+09 P: user user1 song song3 minutes 2
+* Play: user user1 plays song song3 playtime 2 totalplaytime 2
+********************
+10 S:
+User user1 category pro totalplaytime 2
+Song song1 playtime 0
+Song song3 playtime 2
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         2     2.00
+********************
+11 P: user user1 song song1 minutes 5
+* Play: user user1 plays song song1 playtime 5 totalplaytime 7
+********************
+12 S:
+User user1 category pro totalplaytime 7
+Song song1 playtime 5
+Song song3 playtime 2
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         7     7.00
+********************
+13 P: user user2 song song1 minutes 3
++ Error: Play not possible
+********************
+14 S:
+User user1 category pro totalplaytime 7
+Song song1 playtime 5
+Song song3 playtime 2
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         7     7.00

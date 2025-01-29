@@ -1,0 +1,12 @@
+01 N user1 basic 
+02 S
+03 N user2 basic 
+04 S
+05 N user3 basic
+06 S
+07 A user3 song1
+08 S
+09 P user3 song1 10
+10 S
+11 R 5
+12 S

@@ -1,0 +1,14 @@
+01 N user2 basic                           #new user user2 category basic
+02 S
+03 N user1 pro                            #new user user1 category pro
+04 S
+05 A user1 song1                         	 #add user song1 to user1
+06 S
+07 A user1 song3                         	 #add user song3 to user1
+08 S
+09 P user1 song3 2                        #user1 play song3 2 min
+10 S
+11 P user1 song1 5                        #user1 play song1 5 min
+12 S
+13 P user2 song1 3                         #error: user2 without song1
+14 S

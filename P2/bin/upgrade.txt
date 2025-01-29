@@ -1,0 +1,6 @@
+01 N user1 basic                          #new user user1 category basic
+02 N user2 pro                            #new user user2 category pro
+03 N user3 pro                            #new user user3 category pro
+04 S
+05 U user1
+06 S

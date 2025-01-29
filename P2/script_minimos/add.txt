@@ -1,0 +1,8 @@
+01 N user2 basic                           #new user user2 category basic
+02 S
+03 N user1 pro                            #new user user1 category pro
+04 S
+05 A user1 song1                         	 #add user song1 to user1
+06 S
+07 A user1 song2                         	 #add user song2 to user1
+08 S

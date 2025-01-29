@@ -1,0 +1,395 @@
+********************
+01 S:
++ Error: Stats not possible
+********************
+02 A: user user1 song Without_Me
++ Error: Add not possible
+********************
+03 P: user user1 song Without_Me minutes 10
++ Error: Play not possible
+********************
+04 U: user user1
++ Error: Upgrade not possible
+********************
+05 R: maxtime user
++ Error: Remove not possible
+********************
+06 N: user user1 category pro
+* New: user user1 category pro
+********************
+07 R: maxtime 10
++ Error: Remove not possible
+********************
+08 P: user user1 song Without_Me minutes 20
++ Error: Play not possible
+********************
+09 A: user user1 song Legacy
+* Add: user user1 adds song Legacy
+********************
+10 P: user user1 song Without_Me minutes 10
++ Error: Play not possible
+********************
+11 R: maxtime 5
++ Error: Remove not possible
+********************
+12 U: user user1
++ Error: Upgrade not possible
+********************
+13 N: user user2 category basic
+* New: user user2 category basic
+********************
+14 U: user user2
+* Upgrade: user user2 category pro
+********************
+15 S:
+User user1 category pro totalplaytime 0
+Song Legacy playtime 0
+
+User user2 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           2         0     0.00
+********************
+16 N: user user3 category basic
+* New: user user3 category basic
+********************
+17 A: user user3 song Legacy
+* Add: user user3 adds song Legacy
+********************
+18 P: user user3 song Legacy minutes 10
+* Play: user user3 plays song Legacy playtime 10 totalplaytime 10
+********************
+19 N: user user4 category basic
+* New: user user4 category basic
+********************
+20 A: user user4 song Superman
+* Add: user user4 adds song Superman
+********************
+21 P: user user4 song Superman minutes 21
+* Play: user user4 plays song Superman playtime 21 totalplaytime 21
+********************
+22 S:
+User user1 category pro totalplaytime 0
+Song Legacy playtime 0
+
+User user2 category pro totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 10
+Song Legacy playtime 10
+
+User user4 category basic totalplaytime 21
+Song Superman playtime 21
+
+Category  Users  TimePlay  Average
+Basic         2        31    15.50
+Pro           2         0     0.00
+********************
+23 N: user user5 category basic
+* New: user user5 category basic
+********************
+24 A: user user5 song Superman
+* Add: user user5 adds song Superman
+********************
+25 P: user user5 song Superman minutes 37
+* Play: user user5 plays song Superman playtime 37 totalplaytime 37
+********************
+26 S:
+User user1 category pro totalplaytime 0
+Song Legacy playtime 0
+
+User user2 category pro totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 10
+Song Legacy playtime 10
+
+User user4 category basic totalplaytime 21
+Song Superman playtime 21
+
+User user5 category basic totalplaytime 37
+Song Superman playtime 37
+
+Category  Users  TimePlay  Average
+Basic         3        68    22.67
+Pro           2         0     0.00
+********************
+27 R: maxtime 1
+Removing user user3 totalplaytime 10
+Removing user user4 totalplaytime 21
+Removing user user5 totalplaytime 37
+********************
+28 S:
+User user1 category pro totalplaytime 0
+Song Legacy playtime 0
+
+User user2 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           2         0     0.00
+********************
+29 D: user user1
+* Delete: user user1 category pro totalplaytime 0
+********************
+30 D: user user2
+* Delete: user user2 category pro totalplaytime 0
+********************
+31 N: user user1 category basic
+* New: user user1 category basic
+********************
+32 N: user user2 category basic
+* New: user user2 category basic
+********************
+33 A: user user1 song Legacy
+* Add: user user1 adds song Legacy
+********************
+34 P: user user1 song Legacy minutes 32
+* Play: user user1 plays song Legacy playtime 32 totalplaytime 32
+********************
+35 A: user user2 song Lose_Yourself
+* Add: user user2 adds song Lose_Yourself
+********************
+36 P: user user2 song Lose_Yourself minutes 30
+* Play: user user2 plays song Lose_Yourself playtime 30 totalplaytime 30
+********************
+37 R: maxtime 31
+Removing user user1 totalplaytime 32
+********************
+38 S:
+User user2 category basic totalplaytime 30
+Song Lose_Yourself playtime 30
+
+Category  Users  TimePlay  Average
+Basic         1        30    30.00
+Pro           0         0     0.00
+********************
+39 D: user user2
+* Delete: user user2 category basic totalplaytime 30
+********************
+40 N: user user1 category basic
+* New: user user1 category basic
+********************
+41 N: user user2 category basic
+* New: user user2 category basic
+********************
+42 A: user user1 song business
+* Add: user user1 adds song business
+********************
+43 P: user user1 song business minutes 32
+* Play: user user1 plays song business playtime 32 totalplaytime 32
+********************
+44 A: user user2 song Mockingbird
+* Add: user user2 adds song Mockingbird
+********************
+45 P: user user2 song Mockingbird minutes 35
+* Play: user user2 plays song Mockingbird playtime 35 totalplaytime 35
+********************
+46 R: maxtime 35
++ Error: Remove not possible
+********************
+47 S:
+User user1 category basic totalplaytime 32
+Song business playtime 32
+
+User user2 category basic totalplaytime 35
+Song Mockingbird playtime 35
+
+Category  Users  TimePlay  Average
+Basic         2        67    33.50
+Pro           0         0     0.00
+********************
+48 N: user user1 category basic
++ Error: New not possible
+********************
+49 N: user user2 category basic
++ Error: New not possible
+********************
+50 N: user user3 category basic
+* New: user user3 category basic
+********************
+51 N: user user4 category basic
+* New: user user4 category basic
+********************
+52 N: user user5 category basic
+* New: user user5 category basic
+********************
+53 A: user user1 song Cindarella_man
+* Add: user user1 adds song Cindarella_man
+********************
+54 A: user user2 song Cindarella_man
+* Add: user user2 adds song Cindarella_man
+********************
+55 A: user user3 song Cindarella_man
+* Add: user user3 adds song Cindarella_man
+********************
+56 A: user user4 song Cindarella_man
+* Add: user user4 adds song Cindarella_man
+********************
+57 A: user user5 song Cindarella_man
+* Add: user user5 adds song Cindarella_man
+********************
+58 P: user user1 song Cindarella_man minutes 124
+* Play: user user1 plays song Cindarella_man playtime 124 totalplaytime 156
+********************
+59 P: user user2 song Cindarella_man minutes 124
+* Play: user user2 plays song Cindarella_man playtime 124 totalplaytime 159
+********************
+60 P: user user3 song Cindarella_man minutes 124
+* Play: user user3 plays song Cindarella_man playtime 124 totalplaytime 124
+********************
+61 P: user user4 song Cindarella_man minutes 124
+* Play: user user4 plays song Cindarella_man playtime 124 totalplaytime 124
+********************
+62 P: user user5 song Cindarella_man minutes 124
+* Play: user user5 plays song Cindarella_man playtime 124 totalplaytime 124
+********************
+63 S:
+User user1 category basic totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category basic totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         5       687   137.40
+Pro           0         0     0.00
+********************
+64 U: user user1
+* Upgrade: user user1 category pro
+********************
+65 S:
+User user1 category pro totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category basic totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         4       531   132.75
+Pro           1       156   156.00
+********************
+66 U: user user2
+* Upgrade: user user2 category pro
+********************
+67 S:
+User user1 category pro totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category pro totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         3       372   124.00
+Pro           2       315   157.50
+********************
+68 U: user user3
+* Upgrade: user user3 category pro
+********************
+69 S:
+User user1 category pro totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category pro totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         2       248   124.00
+Pro           3       439   146.33
+********************
+70 U: user user4
+* Upgrade: user user4 category pro
+********************
+71 S:
+User user1 category pro totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category pro totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category basic totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         1       124   124.00
+Pro           4       563   140.75
+********************
+72 U: user user5
+* Upgrade: user user5 category pro
+********************
+73 S:
+User user1 category pro totalplaytime 156
+Song business playtime 32
+Song Cindarella_man playtime 124
+
+User user2 category pro totalplaytime 159
+Song Mockingbird playtime 35
+Song Cindarella_man playtime 124
+
+User user3 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user4 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+User user5 category pro totalplaytime 124
+Song Cindarella_man playtime 124
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           5       687   137.40

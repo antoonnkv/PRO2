@@ -1,0 +1,37 @@
+********************
+01 N: user user1 category basic
+* New: user user1 category basic
+********************
+02 N: user user2 category basic
+* New: user user2 category basic
+********************
+03 N: user user3 category basic
+* New: user user3 category basic
+********************
+04 S:
+User user1 category basic totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         3         0     0.00
+Pro           0         0     0.00
+********************
+05 D: user user2
+* Delete: user user2 category basic totalplaytime 0
+********************
+06 S:
+User user1 category basic totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         2         0     0.00
+Pro           0         0     0.00

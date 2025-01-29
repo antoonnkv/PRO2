@@ -1,0 +1,141 @@
+01 S                #error STATS (lista vacia)
+02 N user1 basic
+03 N user1 pro      #error NEW (ya existe el usuario)
+04 S
+05 D user2          #error DELETE (no existe el usuario)
+06 D user1
+07 D user1          #error DELETE (lista vacia)
+08 S                #error STATS (lista vacia)
+09 U user1          #error UPGRADE (lista vacia)
+10 N user1 pro
+11 U user1          #error UPGRADE (ya es pro)
+12 N user2 basic
+13 S
+14 U user3          #error UPGRADE (no existe el usuario)
+15 U user2
+16 S
+17 D user2
+18 D user1
+19 S                #error STATS (lista vacia)
+20 A user1 song1    #error ADD (lista vacia)
+21 N user1 basic
+22 A user2 song1    #error ADD (no existe el usuario)
+23 A user1 song1
+24 A user1 song1    #error ADD (ya existe la cancion)
+25 D user1
+26 P user1 song1 2  #error PLAY (lista vacia)
+27 N user1 basic
+28 A user1 song1
+29 S
+30 P user2 song1 2  #error PLAY (no existe el usuario)
+31 P user1 song2 2  #error PLAY  (no existe la cancion)
+32 P user1 song1 2
+33 S
+34 D user1
+35 R 5              #error REMOVE (lista vacia)
+36 N user1 pro
+37 S
+38 R 5              #error REMOVE (no hay usuarios basic)
+39 N user2 basic
+40 A user2 song1
+41 P user2 song1 4
+42 S
+43 R 5              #error REMOVE (ningun usuario basic alcanzo el limite)
+44 A user2 song2
+45 P user2 song2 4
+46 N user3 basic
+47 A user3 song1
+48 P user3 song1 7
+49 S
+50 R 5
+51 S
+52 A user1 song1
+53 A user1 song2
+54 A user1 song3
+55 A user1 song4
+56 A user1 song5
+57 A user1 song6
+58 A user1 song7
+59 A user1 song8
+60 A user1 song9
+61 A user1 song10
+62 A user1 song11
+63 A user1 song12
+64 A user1 song13
+65 A user1 song14
+66 A user1 song15
+67 A user1 song16
+68 A user1 song17
+69 A user1 song18
+70 A user1 song19
+71 A user1 song20
+72 A user1 song21
+73 A user1 song22
+74 A user1 song23
+75 A user1 song24
+76 A user1 song25
+77 A user1 song26   #error A (lista de canciones llena)
+78 S
+79 D user1
+80 S                #error S (lista vacia)
+81 N user1 basic    #N en vacia
+82 N user2 basic    #N tras primero
+83 N user3 basic    #N al final
+84 N user0 basic    #N primero
+85 S
+86 D user0          #D primero
+87 S
+88 D user2          #D medio
+89 S
+90 D user3          #D final
+91 S
+92 D user1          #D unico elem
+93 S                #error S (lista vacia)
+94 N user1 basic
+94 A user1 song1
+94 P user1 song1 5
+95 S
+96 R 1              #R unico elem
+97 S                #error S (lista vacia)
+98 N user1 pro
+99 N user2 basic
+99 A user2 song1
+99 P user2 song1 5
+100 N user3 pro
+101 S
+102 R 1             #R medio
+103 S
+104 N user0 basic
+104 A user0 song1
+104 P user0 song1 5
+105 S
+106 R 0             #R primero
+107 N user4 basic
+107 A user4 song1
+107 P user4 song1 5
+108 S
+109 R 1             #R ultimo
+110 S
+110 D user1
+111 D user3
+111 N user1 basic
+112 N user2 basic
+113 N user3 basic
+114 A user1 song1
+115 A user2 song1
+116 A user3 song1
+117 P user1 song1 5
+118 P user3 song1 10000
+119 S
+120 R 1             #R primero y ultimo
+121 S
+122 N user1 basic
+123 N user3 basic
+124 A user1 song1
+125 A user3 song1
+126 P user1 song1 5
+127 P user2 song1 5
+128 P user3 song1 5
+129 S
+130 R 1             #R todos
+131 S

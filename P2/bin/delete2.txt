@@ -1,0 +1,6 @@
+01 N user1 basic                       #new user user1 category basic
+02 N user2 basic                       #new user user2 category basic
+03 N user3 basic                       #new user user3 category basic
+04 S
+05 D user2                             #delete user user2
+06 S

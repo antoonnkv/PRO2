@@ -1,0 +1,636 @@
+********************
+01 S:
++ Error: Stats not possible
+********************
+02 N: user user1 category basic
+* New: user user1 category basic
+********************
+03 N: user user1 category pro
++ Error: New not possible
+********************
+04 S:
+User user1 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+05 D: user user2
++ Error: Delete not possible
+********************
+06 D: user user1
+* Delete: user user1 category basic totalplaytime 0
+********************
+07 D: user user1
++ Error: Delete not possible
+********************
+08 S:
++ Error: Stats not possible
+********************
+09 U: user user1
++ Error: Upgrade not possible
+********************
+10 N: user user1 category pro
+* New: user user1 category pro
+********************
+11 U: user user1
++ Error: Upgrade not possible
+********************
+12 N: user user2 category basic
+* New: user user2 category basic
+********************
+13 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           1         0     0.00
+********************
+14 U: user user3
++ Error: Upgrade not possible
+********************
+15 U: user user2
+* Upgrade: user user2 category pro
+********************
+16 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           2         0     0.00
+********************
+17 D: user user2
+* Delete: user user2 category pro totalplaytime 0
+********************
+18 D: user user1
+* Delete: user user1 category pro totalplaytime 0
+********************
+19 S:
++ Error: Stats not possible
+********************
+20 A: user user1 song song1
++ Error: Add not possible
+********************
+21 N: user user1 category basic
+* New: user user1 category basic
+********************
+22 A: user user2 song song1
++ Error: Add not possible
+********************
+23 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+24 A: user user1 song song1
++ Error: Add not possible
+********************
+25 D: user user1
+* Delete: user user1 category basic totalplaytime 0
+********************
+26 P: user user1 song song1 minutes 2
++ Error: Play not possible
+********************
+27 N: user user1 category basic
+* New: user user1 category basic
+********************
+28 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+29 S:
+User user1 category basic totalplaytime 0
+Song song1 playtime 0
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+30 P: user user2 song song1 minutes 2
++ Error: Play not possible
+********************
+31 P: user user1 song song2 minutes 2
++ Error: Play not possible
+********************
+32 P: user user1 song song1 minutes 2
+* Play: user user1 plays song song1 playtime 2 totalplaytime 2
+********************
+33 S:
+User user1 category basic totalplaytime 2
+Song song1 playtime 2
+
+Category  Users  TimePlay  Average
+Basic         1         2     2.00
+Pro           0         0     0.00
+********************
+34 D: user user1
+* Delete: user user1 category basic totalplaytime 2
+********************
+35 R: maxtime 5
++ Error: Remove not possible
+********************
+36 N: user user1 category pro
+* New: user user1 category pro
+********************
+37 S:
+User user1 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           1         0     0.00
+********************
+38 R: maxtime 5
++ Error: Remove not possible
+********************
+39 N: user user2 category basic
+* New: user user2 category basic
+********************
+40 A: user user2 song song1
+* Add: user user2 adds song song1
+********************
+41 P: user user2 song song1 minutes 4
+* Play: user user2 plays song song1 playtime 4 totalplaytime 4
+********************
+42 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 4
+Song song1 playtime 4
+
+Category  Users  TimePlay  Average
+Basic         1         4     4.00
+Pro           1         0     0.00
+********************
+43 R: maxtime 5
++ Error: Remove not possible
+********************
+44 A: user user2 song song2
+* Add: user user2 adds song song2
+********************
+45 P: user user2 song song2 minutes 4
+* Play: user user2 plays song song2 playtime 4 totalplaytime 8
+********************
+46 N: user user3 category basic
+* New: user user3 category basic
+********************
+47 A: user user3 song song1
+* Add: user user3 adds song song1
+********************
+48 P: user user3 song song1 minutes 7
+* Play: user user3 plays song song1 playtime 7 totalplaytime 7
+********************
+49 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 8
+Song song1 playtime 4
+Song song2 playtime 4
+
+User user3 category basic totalplaytime 7
+Song song1 playtime 7
+
+Category  Users  TimePlay  Average
+Basic         2        15     7.50
+Pro           1         0     0.00
+********************
+50 R: maxtime 5
+Removing user user2 totalplaytime 8
+Removing user user3 totalplaytime 7
+********************
+51 S:
+User user1 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           1         0     0.00
+********************
+52 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+53 A: user user1 song song2
+* Add: user user1 adds song song2
+********************
+54 A: user user1 song song3
+* Add: user user1 adds song song3
+********************
+55 A: user user1 song song4
+* Add: user user1 adds song song4
+********************
+56 A: user user1 song song5
+* Add: user user1 adds song song5
+********************
+57 A: user user1 song song6
+* Add: user user1 adds song song6
+********************
+58 A: user user1 song song7
+* Add: user user1 adds song song7
+********************
+59 A: user user1 song song8
+* Add: user user1 adds song song8
+********************
+60 A: user user1 song song9
+* Add: user user1 adds song song9
+********************
+61 A: user user1 song song10
+* Add: user user1 adds song song10
+********************
+62 A: user user1 song song11
+* Add: user user1 adds song song11
+********************
+63 A: user user1 song song12
+* Add: user user1 adds song song12
+********************
+64 A: user user1 song song13
+* Add: user user1 adds song song13
+********************
+65 A: user user1 song song14
+* Add: user user1 adds song song14
+********************
+66 A: user user1 song song15
+* Add: user user1 adds song song15
+********************
+67 A: user user1 song song16
+* Add: user user1 adds song song16
+********************
+68 A: user user1 song song17
+* Add: user user1 adds song song17
+********************
+69 A: user user1 song song18
+* Add: user user1 adds song song18
+********************
+70 A: user user1 song song19
+* Add: user user1 adds song song19
+********************
+71 A: user user1 song song20
+* Add: user user1 adds song song20
+********************
+72 A: user user1 song song21
+* Add: user user1 adds song song21
+********************
+73 A: user user1 song song22
+* Add: user user1 adds song song22
+********************
+74 A: user user1 song song23
+* Add: user user1 adds song song23
+********************
+75 A: user user1 song song24
+* Add: user user1 adds song song24
+********************
+76 A: user user1 song song25
+* Add: user user1 adds song song25
+********************
+77 A: user user1 song song26
++ Error: Add not possible
+********************
+78 S:
+User user1 category pro totalplaytime 0
+Song song1 playtime 0
+Song song2 playtime 0
+Song song3 playtime 0
+Song song4 playtime 0
+Song song5 playtime 0
+Song song6 playtime 0
+Song song7 playtime 0
+Song song8 playtime 0
+Song song9 playtime 0
+Song song10 playtime 0
+Song song11 playtime 0
+Song song12 playtime 0
+Song song13 playtime 0
+Song song14 playtime 0
+Song song15 playtime 0
+Song song16 playtime 0
+Song song17 playtime 0
+Song song18 playtime 0
+Song song19 playtime 0
+Song song20 playtime 0
+Song song21 playtime 0
+Song song22 playtime 0
+Song song23 playtime 0
+Song song24 playtime 0
+Song song25 playtime 0
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           1         0     0.00
+********************
+79 D: user user1
+* Delete: user user1 category pro totalplaytime 0
+********************
+80 S:
++ Error: Stats not possible
+********************
+81 N: user user1 category basic
+* New: user user1 category basic
+********************
+82 N: user user2 category basic
+* New: user user2 category basic
+********************
+83 N: user user3 category basic
+* New: user user3 category basic
+********************
+84 N: user user0 category basic
+* New: user user0 category basic
+********************
+85 S:
+User user0 category basic totalplaytime 0
+No songs
+
+User user1 category basic totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         4         0     0.00
+Pro           0         0     0.00
+********************
+86 D: user user0
+* Delete: user user0 category basic totalplaytime 0
+********************
+87 S:
+User user1 category basic totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         3         0     0.00
+Pro           0         0     0.00
+********************
+88 D: user user2
+* Delete: user user2 category basic totalplaytime 0
+********************
+89 S:
+User user1 category basic totalplaytime 0
+No songs
+
+User user3 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         2         0     0.00
+Pro           0         0     0.00
+********************
+90 D: user user3
+* Delete: user user3 category basic totalplaytime 0
+********************
+91 S:
+User user1 category basic totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+92 D: user user1
+* Delete: user user1 category basic totalplaytime 0
+********************
+93 S:
++ Error: Stats not possible
+********************
+94 N: user user1 category basic
+* New: user user1 category basic
+********************
+94 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+94 P: user user1 song song1 minutes 5
+* Play: user user1 plays song song1 playtime 5 totalplaytime 5
+********************
+95 S:
+User user1 category basic totalplaytime 5
+Song song1 playtime 5
+
+Category  Users  TimePlay  Average
+Basic         1         5     5.00
+Pro           0         0     0.00
+********************
+96 R: maxtime 1
+Removing user user1 totalplaytime 5
+********************
+97 S:
++ Error: Stats not possible
+********************
+98 N: user user1 category pro
+* New: user user1 category pro
+********************
+99 N: user user2 category basic
+* New: user user2 category basic
+********************
+99 A: user user2 song song1
+* Add: user user2 adds song song1
+********************
+99 P: user user2 song song1 minutes 5
+* Play: user user2 plays song song1 playtime 5 totalplaytime 5
+********************
+100 N: user user3 category pro
+* New: user user3 category pro
+********************
+101 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user2 category basic totalplaytime 5
+Song song1 playtime 5
+
+User user3 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         5     5.00
+Pro           2         0     0.00
+********************
+102 R: maxtime 1
+Removing user user2 totalplaytime 5
+********************
+103 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user3 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           2         0     0.00
+********************
+104 N: user user0 category basic
+* New: user user0 category basic
+********************
+104 A: user user0 song song1
+* Add: user user0 adds song song1
+********************
+104 P: user user0 song song1 minutes 5
+* Play: user user0 plays song song1 playtime 5 totalplaytime 5
+********************
+105 S:
+User user0 category basic totalplaytime 5
+Song song1 playtime 5
+
+User user1 category pro totalplaytime 0
+No songs
+
+User user3 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         1         5     5.00
+Pro           2         0     0.00
+********************
+106 R: maxtime 0
+Removing user user0 totalplaytime 5
+********************
+107 N: user user4 category basic
+* New: user user4 category basic
+********************
+107 A: user user4 song song1
+* Add: user user4 adds song song1
+********************
+107 P: user user4 song song1 minutes 5
+* Play: user user4 plays song song1 playtime 5 totalplaytime 5
+********************
+108 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user3 category pro totalplaytime 0
+No songs
+
+User user4 category basic totalplaytime 5
+Song song1 playtime 5
+
+Category  Users  TimePlay  Average
+Basic         1         5     5.00
+Pro           2         0     0.00
+********************
+109 R: maxtime 1
+Removing user user4 totalplaytime 5
+********************
+110 S:
+User user1 category pro totalplaytime 0
+No songs
+
+User user3 category pro totalplaytime 0
+No songs
+
+Category  Users  TimePlay  Average
+Basic         0         0     0.00
+Pro           2         0     0.00
+********************
+110 D: user user1
+* Delete: user user1 category pro totalplaytime 0
+********************
+111 D: user user3
+* Delete: user user3 category pro totalplaytime 0
+********************
+111 N: user user1 category basic
+* New: user user1 category basic
+********************
+112 N: user user2 category basic
+* New: user user2 category basic
+********************
+113 N: user user3 category basic
+* New: user user3 category basic
+********************
+114 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+115 A: user user2 song song1
+* Add: user user2 adds song song1
+********************
+116 A: user user3 song song1
+* Add: user user3 adds song song1
+********************
+117 P: user user1 song song1 minutes 5
+* Play: user user1 plays song song1 playtime 5 totalplaytime 5
+********************
+118 P: user user3 song song1 minutes 10000
+* Play: user user3 plays song song1 playtime 10000 totalplaytime 10000
+********************
+119 S:
+User user1 category basic totalplaytime 5
+Song song1 playtime 5
+
+User user2 category basic totalplaytime 0
+Song song1 playtime 0
+
+User user3 category basic totalplaytime 10000
+Song song1 playtime 10000
+
+Category  Users  TimePlay  Average
+Basic         3     10005  3335.00
+Pro           0         0     0.00
+********************
+120 R: maxtime 1
+Removing user user1 totalplaytime 5
+Removing user user3 totalplaytime 10000
+********************
+121 S:
+User user2 category basic totalplaytime 0
+Song song1 playtime 0
+
+Category  Users  TimePlay  Average
+Basic         1         0     0.00
+Pro           0         0     0.00
+********************
+122 N: user user1 category basic
+* New: user user1 category basic
+********************
+123 N: user user3 category basic
+* New: user user3 category basic
+********************
+124 A: user user1 song song1
+* Add: user user1 adds song song1
+********************
+125 A: user user3 song song1
+* Add: user user3 adds song song1
+********************
+126 P: user user1 song song1 minutes 5
+* Play: user user1 plays song song1 playtime 5 totalplaytime 5
+********************
+127 P: user user2 song song1 minutes 5
+* Play: user user2 plays song song1 playtime 5 totalplaytime 5
+********************
+128 P: user user3 song song1 minutes 5
+* Play: user user3 plays song song1 playtime 5 totalplaytime 5
+********************
+129 S:
+User user1 category basic totalplaytime 5
+Song song1 playtime 5
+
+User user2 category basic totalplaytime 5
+Song song1 playtime 5
+
+User user3 category basic totalplaytime 5
+Song song1 playtime 5
+
+Category  Users  TimePlay  Average
+Basic         3        15     5.00
+Pro           0         0     0.00
+********************
+130 R: maxtime 1
+Removing user user1 totalplaytime 5
+Removing user user2 totalplaytime 5
+Removing user user3 totalplaytime 5
+********************
+131 S:
++ Error: Stats not possible

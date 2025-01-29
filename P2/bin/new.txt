@@ -1,0 +1,8 @@
+01 N user1 basic                             #new user user1 category basic
+02 S
+03 N user2 pro                               #new user user2 category pro
+04 S
+05 N user3 basic                             #new user user3 category basic
+06 S
+07 N user1 pro                            #error: new not possible
+08 S

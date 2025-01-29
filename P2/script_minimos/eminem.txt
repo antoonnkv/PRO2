@@ -1,0 +1,73 @@
+01 S                    #Comprobar las funciones sin usuarios
+02 A user1 Without_Me
+03 P user1 Without_Me 10
+04 U user1
+05 R user 1
+06 N user1 pro             #Remove y play sin add
+07 R 10
+08 P user1 Without_Me 20
+09 A user1 Legacy       #Play una canción que no existe
+10 P user1 Without_Me 10
+11 R 5                  #Remove después de reproducir una canción que no existe
+12 U user1              #Upgrade a un pro
+13 N user2 basic        #A partir de aquí son cosas que deberían funcionar
+14 U user2
+15 S
+16 N user3 basic
+17 A user3 Legacy
+18 P user3 Legacy 10
+19 N user4 basic
+20 A user4 Superman
+21 P user4 Superman 21
+22 S
+23 N user5 basic
+24 A user5 Superman
+25 P user5 Superman 37
+26 S
+27 R 1
+28 S
+29 D user1
+30 D user2
+31 N user1 basic         #Borrar al primer usuario de la lista y que no casque
+32 N user2 basic
+33 A user1 Legacy
+34 P user1 Legacy 32
+35 A user2 Lose_Yourself
+36 P user2 Lose_Yourself 30
+37 R 31
+38 S
+39 D user2
+40 N user1 basic         #Borrar al ultimo usuario de la lista y que no casque
+41 N user2 basic
+42 A user1 business
+43 P user1 business 32
+44 A user2 Mockingbird
+45 P user2 Mockingbird 35
+46 R 35
+47 S
+48 N user1 basic
+49 N user2 basic
+50 N user3 basic
+51 N user4 basic
+52 N user5 basic
+53 A user1 Cindarella_man
+54 A user2 Cindarella_man
+55 A user3 Cindarella_man
+56 A user4 Cindarella_man
+57 A user5 Cindarella_man
+58 P user1 Cindarella_man 124
+59 P user2 Cindarella_man 124
+60 P user3 Cindarella_man 124
+61 P user4 Cindarella_man 124
+62 P user5 Cindarella_man 124 #Comprobar que se suman bien las medias al upgradear usuarios
+63 S
+64 U user1
+65 S
+66 U user2
+67 S
+68 U user3
+69 S
+70 U user4
+71 S
+72 U user5
+73 S
